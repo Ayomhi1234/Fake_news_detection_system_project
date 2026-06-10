@@ -4,11 +4,11 @@ A machine learning system that detects whether a news article is **fake or real*
 with a focus on Nigerian and international news. Built using NLP and classical ML 
 classifiers, deployed via a Streamlit web application.
 
-🔗 **Live Demo:** [Try it here](https://fakenewsdetectionsystemproject-qe4naupznvzbaukkfwg3uz.streamlit.app/)
+ **Live Demo:** [Try it here](https://fakenewsdetectionsystemproject-qe4naupznvzbaukkfwg3uz.streamlit.app/)
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 The spread of fake news has become a major societal challenge, particularly in Nigeria 
 where misinformation spreads rapidly across social media platforms. This project builds 
@@ -17,7 +17,7 @@ and combating disinformation.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Collect and merge multiple fake and real news datasets
 - Preprocess and clean text data using NLP techniques
@@ -26,7 +26,7 @@ and combating disinformation.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 Four datasets were merged into a single corpus (~60,000 rows):
 
@@ -43,7 +43,7 @@ two leading Nigerian fact-checking platforms.
 
 ---
 
-## 🔄 Project Pipeline
+##  Project Pipeline
 
 1. Introduction & Problem Statement
 2. Importing Dependencies
@@ -66,31 +66,31 @@ two leading Nigerian fact-checking platforms.
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 | Model | Accuracy |
 |---|---|
 | Logistic Regression | 97.13% |
-| LinearSVC (SVM) | 97.99% ✅ |
+| LinearSVC (SVM) | 97.99%  |
 
 **LinearSVC was selected as the final model** based on higher accuracy and fewer 
 misclassifications on both classes.
 
 ---
 
-## 🧪 Model Evaluation
+##  Model Evaluation
 
 ### Logistic Regression Confusion Matrix
 | | Predicted Real (0) | Predicted Fake (1) |
 |---|---|---|
-| **Actual Real (0)** | 8262 ✅ | 88 ❌ |
-| **Actual Fake (1)** | 290 ❌ | 4539 ✅ |
+| **Actual Real (0)** | 8262 | 88  |
+| **Actual Fake (1)** | 290  | 4539  |
 
 ### SVM Confusion Matrix
 | | Predicted Real (0) | Predicted Fake (1) |
 |---|---|---|
-| **Actual Real (0)** | 8271 ✅ | 79 ❌ |
-| **Actual Fake (1)** | 186 ❌ | 4643 ✅ |
+| **Actual Real (0)** | 8271  | 79  |
+| **Actual Fake (1)** | 186  | 4643  |
 
 SVM produced fewer misclassifications on both classes.
 
@@ -104,7 +104,7 @@ Top words indicating **Real News:** `reuters`, `said`, `nigeria`, `buhari`, `nig
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - The model is biased toward **US political fake news** due to the dominance of the 
   ISOT dataset in training
@@ -116,12 +116,12 @@ Top words indicating **Real News:** `reuters`, `said`, `nigeria`, `buhari`, `nig
 
 ---
 
-## 🚀 Streamlit Web Application
+##  Streamlit Web Application
 
 The system is deployed as a web app where users can paste any news article and 
 receive an instant prediction with a confidence score.
 
-🔗 **Live Demo:** [fakenewsdetectionsystemproject.streamlit.app](https://fakenewsdetectionsystemproject-qe4naupznvzbaukkfwg3uz.streamlit.app/)
+ **Live Demo:** [fakenewsdetectionsystemproject.streamlit.app](https://fakenewsdetectionsystemproject-qe4naupznvzbaukkfwg3uz.streamlit.app/)
 
 **Features:**
 - Real-time fake/real classification
@@ -130,7 +130,7 @@ receive an instant prediction with a confidence score.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language:** Python 3.13
 - **Libraries:** Scikit-learn, NLTK, Pandas, NumPy, Matplotlib, Seaborn, Joblib, Streamlit
@@ -141,7 +141,7 @@ receive an instant prediction with a confidence score.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 Fake_news_detection_system_project/
@@ -160,7 +160,7 @@ Fake_news_detection_system_project/
 
 ---
 
-## 🖥️ How to Run Locally
+##  How to Run Locally
 
 **Requirements:** Python 3.7+
 
@@ -178,7 +178,7 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Source a larger Nigerian fake news dataset for better local context
 - Add Nigerian language support (Yoruba, Hausa, Igbo)
@@ -188,14 +188,14 @@ streamlit run app.py
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Ayomide Somide** — Data Scientist | NYSC | Pharmaceutical Industry  
 GitHub: [Ayomhi1234](https://github.com/Ayomhi1234)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dubawa** & **Africa Check** — Nigerian fact-checking platforms (fake news data source)
 - **University of Victoria** — ISOT Fake News Dataset
