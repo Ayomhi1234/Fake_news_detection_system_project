@@ -96,7 +96,7 @@ SVM produced fewer misclassifications on both classes.
 
 ---
 
-## 🔍 Feature Importance
+##  Feature Importance
 
 Top words indicating **Fake News:** `via`, `image`, `gop`, `hillary`, `obama`, `breitbart`, `fox`
 
